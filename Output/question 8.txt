@@ -1,0 +1,14 @@
+Find the error.
+double getAverage(int arr[], int size);
+int main () {
+int balance[5] = {1000, 2, 3, 17, 50};
+double avg;
+avg = getAverage( balance[0], 5 ) ;
+cout << "Average value is: " << avg << endl;
+return 0;
+}
+
+
+Output :: The error in the code is in the way we are passing the array balance to the function getAverage(). We are passing balance[0] instead of balance. Here's the corrected version:
+
+ avg = getAverage(balance, 5);
